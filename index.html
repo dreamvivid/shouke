@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <!-- stylesheet -->
+    <link href="css/literallycanvas.css" rel="stylesheet">
+    <link href="css/board.css" rel="stylesheet" media="screen">
+    <link href="css/canvas.css" rel="stylesheet" media="screen">
+    <script src="scripts/literallycanvas-core.js"></script>
+    <script src="scripts/react-with-addons.js"></script>
+    <script src="scripts/literallycanvas.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="data.js"></script>
+  </head>
+  <body>
+    <div class="modal"></div>
+    <div class="container">
+        <div id="board"></div>
+    </div>
+
+    <div class="tool-container">
+            <div class="t-btn-c">
+                <img src="images/t-zhuomian.png" />
+                <div>桌面</div>
+            </div>
+            <div class="t-btn-c">
+                <img src="images/t-shouke.png" />
+                <div>授课包</div>
+            </div>
+            <div class="t-btn-c btn-zhou">
+                <img src="images/t-jiaoxue.png" />
+                <div>教学轴</div>
+            </div>
+            <div class="t-btn-c">
+                <img src="images/t-cailiao.png" />
+                <div>材料库</div>
+                <div class="btn-cailiao-k b-pop">
+                    <div class="c-l-con">
+                        <span>条幅</span>
+                        <span>中堂</span>
+                        <span>横批</span>
+                        <span>匾额</span>
+                        <span>斗方</span>
+                        <span>扇面</span>
+                        <span>对联</span>
+                        <span>尺牍</span>
+                        <span>手卷</span>
+                        <span>页册</span>
+                        <span>题画</span>
+                    </div>
+                    <div class="t-list">
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-btn-c">
+                <img src="images/t-yinzhang.png" />
+                <div>印章库</div>
+                <div class="btn-yinzhang-k b-pop">
+                    <div class="y-z-con">
+                        <span>姓名章：</span>
+                        <select>
+                            <option>阳文</option>
+                        </select>
+                        <span>闲章：</span>
+                        <select>
+                            <option>引首章-翟浩章</option>
+                        </select>
+                    </div>
+                    <div class="t-list">
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                        <div class="t-l-item">
+                            <img src="images/user-photo.png" />
+                            <div>现代卓越的佛教领袖</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-p-line"></div>
+            <div class="t-btn-c">
+                <img src="images/t-xuanze.png" />
+                <div>选择</div>
+            </div>
+            <div class="t-btn-c btn-pencil ">
+                <img src="images/t-shouxie.png" />
+                <div>工具栏</div>
+            </div>
+            <div class="t-btn-c btn-eraser">
+                <img src="images/t-xiangpi.png" />
+                <div>橡皮擦</div>
+            </div>
+            <div class="t-btn-c btn-zoom-in">
+                <img src="images/t-fangda.png" />
+                <div>放大镜</div>
+            </div>
+            <div class="t-btn-c">
+                <img src="images/t-tuxing.png" />
+                <div>图形</div>
+            </div>
+            <div class="t-btn-c">
+                <img src="images/t-manyou.png" />
+                <div>漫游</div>
+            </div>
+            <div class="t-btn-c">
+                <img src="images/t-chexiao.png" />
+                <div>撤销</div>
+            </div>
+            <div class="t-btn-c">
+                <img src="images/t-chongzuo.png" />
+                <div>重做</div>
+            </div>
+            <div class="t-btn-c">
+                <img src="images/t-sousuo.png" />
+                <div>搜索</div>
+            </div>
+    </div>
+    <div class="sjz-heng">
+        <img class="btn-heng-left" src="images/zhou-left.png" />
+        <div class="z-h-items">
+            
+        </div>
+        <img class="btn-heng-right" src="images/zhou-right.png" />
+    </div>
+
+    <div class="sjz-zong">
+        <div class="btn-top">
+            <img src="images/up.png" />
+        </div>
+        <div class="zong-items">
+            <div class="row">
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+            </div>
+            <div class="row">
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+            </div>
+            <div class="row">
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+                <img src="images/1.png" />
+            </div>
+        </div>
+        <div class="btn-zong-turn">
+            <span class="btn-zong-left"><</span>
+            <span class="btn-zong-right">></span>
+        </div>
+        <div class="btn-bottom">
+            <img src="images/down.png" />
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="title">
+            <span>小字头 - 光</span>
+            <img class="close close-video" src="images/close.png">
+        </div>
+        <video preload controls="controls" />
+    </div>
+
+    <div class="skb-container">
+        <div class="skb-title">
+            授课包
+        </div>
+        <div class="skb-tabs">
+            <div class="skb-tab active" target="wd-diannao-c">
+                <img src="images/wd-diannao.png" />
+                <div>我的电脑</div>
+            </div>
+            <div class="skb-tab" target="mulu-c">
+                <img src="images/mulu.png" />
+                <div>目录</div>
+            </div>
+            <div class="skb-tab" target="yd-ziyuan-c">
+                <img src="images/yd-ziyuan.png" />
+                <div>云端资源</div>
+            </div>
+            <div class="skb-tab" target="gr-ziyuan-c">
+                <img src="images/gr-ziyuan.png" />
+                <div>个人资源</div>
+            </div>
+        </div>
+        <div class="skb-content-c">
+            <div class="wd-diannao-c active">
+                <div class="pie-list">
+                    <div class="wd-pie active">文档库</div>
+                    <div class="wd-pie">收藏夹</div>
+                    <div class="wd-pie">我的电脑</div>
+                    <div class="wd-pie">C:\</div>
+                    <div class="wd-pie">D:\</div>
+                    <div class="wd-pie">E:\</div>
+                    <div class="wd-pie">F:\</div>
+                </div>
+                <div class="pie-content">
+                    <div class="pie-c-item">
+                        <div class="kc-name">三年级上 第一课 横</div>
+                        <div class="kc-size">344.3KB</div>
+                    </div>
+                    <div class="pie-c-item">
+                        <div class="kc-name">三年级上 第一课 横</div>
+                        <div class="kc-size">344.3KB</div>
+                    </div>
+                    <div class="pie-c-item">
+                        <div class="kc-name">三年级上 第一课 横</div>
+                        <div class="kc-size">344.3KB</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mulu-c">
+                <div class="pie-list">
+                    <div class="wd-pie active">一年级</div>
+                    <div class="wd-pie">二年级</div>
+                    <div class="wd-pie">二年级</div>
+                    <div class="wd-pie">三年级</div>
+                    <div class="wd-pie">四年级</div>
+                    <div class="wd-pie">五年级</div>
+                    <div class="wd-pie">六年级</div>
+                    <div class="wd-pie">七年级</div>
+                    <div class="wd-pie">八年级</div>
+                    <div class="wd-pie">九年级</div>
+                </div>
+                <div class="pie-content">
+                    <div class="term-tab-c">
+                        <div class="term-tabs">
+                            <span class="term-tab active">上学期</span>
+                            <span class="term-tab">下学期</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="pie-c-list">
+                        <div class="pie-c-item">
+                            <div class="kc-name">第一课 横</div>
+                        </div>
+                        <div class="pie-c-item">
+                            <div class="kc-name">第二课 竖</div>
+                        </div>
+                        <div class="pie-c-item">
+                            <div class="kc-name">第三课 撇</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="yd-ziyuan-c">
+                <div class="yd-tabs">
+                    <div class="yd-tab active">精品推荐</div>
+                    <div class="yd-tab">最多收藏</div>
+                    <div class="yd-tab">最新分享</div>
+                </div>
+                <div class="yd-list">
+                    <div class="yd-item">
+                        <div class="y-i-title">第一课 横</div>
+                        <div class="stars">
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="y-i-grad">三年级 上</div>
+                        <div class="y-i-publish">湖南美术出版社</div>
+                        <div class="y-i-author">张海阳 编</div>
+                        <div class="y-i-download">
+                            <img src="images/download.png" />
+                        </div>
+                    </div>
+                    <div class="yd-item">
+                        <div class="y-i-title">第一课 横</div>
+                        <div class="stars">
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="y-i-grad">三年级 上</div>
+                        <div class="y-i-publish">湖南美术出版社</div>
+                        <div class="y-i-author">张海阳 编</div>
+                        <div class="y-i-download">
+                            <img src="images/download.png" />
+                        </div>
+                    </div>
+                    <div class="yd-item">
+                        <div class="y-i-title">第一课 横</div>
+                        <div class="stars">
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="y-i-grad">三年级 上</div>
+                        <div class="y-i-publish">湖南美术出版社</div>
+                        <div class="y-i-author">张海阳 编</div>
+                        <div class="y-i-download">
+                            <img src="images/download.png" />
+                        </div>
+                    </div>
+                    <div class="yd-item">
+                        <div class="y-i-title">第一课 横</div>
+                        <div class="stars">
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="y-i-grad">三年级 上</div>
+                        <div class="y-i-publish">湖南美术出版社</div>
+                        <div class="y-i-author">张海阳 编</div>
+                        <div class="y-i-download">
+                            <img src="images/download.png" />
+                        </div>
+                    </div>
+                    <div class="yd-item">
+                        <div class="y-i-title">第一课 横</div>
+                        <div class="stars">
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="y-i-grad">三年级 上</div>
+                        <div class="y-i-publish">湖南美术出版社</div>
+                        <div class="y-i-author">张海阳 编</div>
+                        <div class="y-i-download">
+                            <img src="images/download.png" />
+                        </div>
+                    </div>
+                    <div class="yd-item">
+                        <div class="y-i-title">第一课 横</div>
+                        <div class="stars">
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star active"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="y-i-grad">三年级 上</div>
+                        <div class="y-i-publish">湖南美术出版社</div>
+                        <div class="y-i-author">张海阳 编</div>
+                        <div class="y-i-download">
+                            <img src="images/download.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/canvas.js"></script>
+    <script src="scripts/board.js"></script>
+    <script>
+        LC1.init(
+            document.getElementById('board'),
+            {
+                imageURLPrefix: 'img'
+            }
+        );
+
+        $('.lc-picker, .lc-options').addClass('hide');
+
+        $('.btn-pencil').click(function(){
+            //$('.toolbar-button[title="Pencil"]').click();
+            $('.lc-picker, .lc-options').toggleClass('hide');
+            console.log('wo-call');
+        });
+    </script>
+  </body>
+</html>

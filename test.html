@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="css/literallycanvas.css" rel="stylesheet">
+    <script src="scripts/literallycanvas-core.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <title>Title</title>
+    <style>
+        html, body, html *, body *{margin:0;padding:0;font-family:Microsoft YaHei,SimHei,SimSun;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+        .toolbar {position:absolute;left:0;bottom:0;z-index:3;font-size:0;background-color:#333;overflow:hidden;}
+        .toolbar .tool-item {display:inline-block;height:80px;width:70px;padding-top:50px;cursor:pointer;color:#efefef;font-size:14px;text-align:center;}
+        .pop-up{position:absolute;z-index:2;width:300px;height:220px;background-color:#666;padding:20px;}
+        .weight-list,.color-list{width:260px;font-size:0;overflow:hidden;margin:5px auto;}
+        .weight-list{background-color:#eee;}
+        .weight-list .weight-item{display:inline-block;margin:1px;border:1px solid #aaa;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+        .color-list .color-item{display:inline-block;margin:3px;width:30px;height:30px;}
+        .canvas-container{position:fixed;top:0;left:0;z-index:1;width:100%;height:100%;}
+        .c-image{position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;}
+        .canvas-container canvas{position:absolute;top:0;right:0;bottom:0;left:0;z-index:2;height:100%;width:100%;}
+        .canvas *{height:100%;}
+        .c-image, .c-content{position:absolute;width:200px;height:200px;top:0;left:0;z-index:1;}
+    </style>
+</head>
+<body>
+
+<div class="canvas-container">
+    <div class="canvas"></div>
+    <img class="c-image" src="source/course_Fue58hhQuQ4kM1aBbwPQW9TZx86V.jpg">
+    <div class="c-content"></div>
+
+</div>
+<ul class="toolbar">
+    <li class="tool-item pencil">铅笔</li>
+    <li class="tool-item fluorescent-pen">荧光笔</li>
+    <li class="tool-item eraser">橡皮擦</li>
+    <li class="tool-item zoom-in">放大</li>
+    <li class="tool-item zoom-out">缩小</li>
+    <li class="tool-item shape">图形</li>
+    <li class="tool-item text">文本</li>
+    <li class="tool-item roam">漫游</li>
+    <li class="tool-item undo">撤销</li>
+    <li class="tool-item clear">重做</li>
+    <li class="tool-item delete">全部清除</li>
+</ul>
+<div id="pencilBox" class="pop-up pencil-box">
+    <ul class="weight-list">
+        <li class="weight-item">
+            <svg width="30" height="30" version="1.1"><circle cx="15" cy="15" r="1"></circle></svg>
+        </li>
+        <li class="weight-item">
+            <svg width="30" height="30" version="1.1"><circle cx="15" cy="15" r="2.5"></circle></svg>
+        </li>
+        <li class="weight-item">
+            <svg width="30" height="30" version="1.1"><circle cx="15" cy="15" r="5"></circle></svg>
+        </li>
+        <li class="weight-item">
+            <svg width="30" height="30" version="1.1"><circle cx="15" cy="15" r="10"></circle></svg>
+        </li>
+        <li class="weight-item">
+            <svg width="30" height="30" version="1.1"><circle cx="15" cy="15" r="15"></circle></svg>
+        </li>
+    </ul>
+    <hr>
+    <ul class="color-list">
+        <li class="color-item" style="background-color:#ff0000;" value="255,0,0"></li>
+        <li class="color-item" style="background-color:#ffff00;" value="255,255,0"></li>
+        <li class="color-item" style="background-color:#00ff00;" value="0,255,0"></li>
+        <li class="color-item" style="background-color:#00ffff;" value="0,255,255"></li>
+        <li class="color-item" style="background-color:#0000ff;" value="0,0,255"></li>
+        <li class="color-item" style="background-color:#ff00ff;" value="255,00,255"></li>
+        <li class="color-item" style="background-color:#ffffff;" value="0,255,0"></li>
+        <li class="color-item" style="background-color:#000000;" value="0,255,255"></li>
+    </ul>
+</div>
+<script src="scripts/test.js"></script>
+<script>
+    $(function() {
+        var $canvas = Canvas();
+        $('body').append($canvas);
+    });
+</script>
+</body>
+
+</html>

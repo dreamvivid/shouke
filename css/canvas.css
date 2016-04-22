@@ -1,0 +1,179 @@
+.container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#board{
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+ .canvas-container{
+    position:absolute;
+    top:20px;
+    left:20px;
+    height:auto;
+    width:auto;
+    width:200px;
+    height:200px;
+}
+
+.canvas-container .lc-picker, .canvas-container .lc-options{
+	display: none !important;
+}
+
+.canvas{
+    border:solid 1px black;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:999;
+    width: 200px;
+    height: 200px;
+    min-height: 0px !important;
+    background-color:transparent !important;
+}
+
+.c-image, .c-content{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    top:0;
+    left:0;
+    z-index:10;
+}
+
+.resize{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    width:10px;
+    height:10px;
+    background-color:blue;
+    z-index:1000;
+}
+
+.toolbar{
+	width: 100px !important;
+	height: auto !important;
+	position: absolute;
+	text-align: center;
+	right: -100px;
+	top: 0px;
+	background-color: #999999;
+	text-align: center;
+	z-index: 10000;
+	display: none;
+}
+
+.toolbar span{
+	display: inline-block;
+	height: 25px !important;
+	width: 100px !important;
+	font-size: 14px;
+	padding-top: 10px;
+	cursor: pointer;
+	background-color: transparent !important;
+	border-top: solid 1px #ffffff;
+}
+
+.toolbar span.active{
+	background-color: yellow !important;
+}
+
+.colors{
+	width: 204px !important;
+	height: 410px !important;
+	position: absolute;
+	right: -326px;
+	top: 0px;
+	border: solid 1px #cccccc;
+	padding: 10px;
+	background-color: #999999;
+	display: none;
+}
+
+.colors .op-title{
+	display: inline-block;
+	width: 65px !important;
+	height: 20px !important;
+	float: left;
+	margin-top: 5px;
+}
+
+.colors .op-c{
+	height: 30px !important;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.colors .opacity{
+	display: inline-block;
+	width: 37px !important;
+	height: 19px !important;
+	float: left;
+	padding: 5px;
+}
+
+.colors .btn-select-color{
+	width: 45px !important;
+	height: 27px !important;
+	text-align: center;
+	margin-left: 21px;
+	clear: both;
+	margin-left: 80px;
+	margin-top: 8px;
+}
+
+.color-type{
+	clear: both;
+	width: 100px;
+	height: 26px !important;
+	margin-left: 5px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.colors .color-list{
+	margin-top: 12px;
+	width: 246px !important;
+	height: 103px !important;
+	clear: both;
+}
+
+.colors .color-list span{
+	float: left;
+	display: inline-block;
+	width: 30px !important;
+	height: 30px !important;
+	margin: 10px;
+}
+
+.colors .color-list span.active{
+	width: 24px !important;
+	height: 24px !important;
+	border: solid 3px #666666;
+}
+
+.drag{
+	width: 10px !important;
+	height: 10px !important;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: blue;
+	opacity: 0.6;
+	z-index: 10000;
+}
+
+.canvas-container[type='image'] .c-content{
+	display: none;
+}
+
+.canvas-container[type='text'] .c-image{
+	display: none;
+}
